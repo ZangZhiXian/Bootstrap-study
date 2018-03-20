@@ -2,9 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>模板</title>
+    <!--width: device-width 可以确保它能正确呈现在不同设备上。
+    initial-scale 确保网页加载时，以 1:1 的比例呈现，不会有任何的缩放。-->
+    <!--添加 maximum-scale=1.0 与 user-scalable=no 可以禁止网页缩放(zooming)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta name="viewport" content="width=device-width,-->
+    <!--initial-scale=1.0,-->
+    <!--maximum-scale=1.0,-->
+    <!--user-scalable=no">-->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <!-- jquery.js 在 bootstrap.js 之前引用-->
+    <script src="../static/js/jquery-2.2.2.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.428571429;
+            color: #333333;
+            background-color: #ffffff;
+        }
+    </style>
 </head>
 <body>
-$END$
+    <h1>我是标题1<small>副标题1</small></h1>
+    <h2>我是标题2
+        <small>副标题2</small><br/>
+        <strong>Strong</strong><br/>
+        <em>em</em>
+
+    </h2>
+    <h3>我是标题3<small>副标题3</small></h3>
+    <h4>我是标题4<small>副标题4</small></h4>
+    <h5>我是标题5<small>副标题5</small></h5>
+    <h6>我是标题6<small>副标题6</small></h6>
+    <p class="lead">着重强调的文本</p>
+    <p class="text-left">文本左对齐</p>
+    <p class="text-right">文本右对齐</p>
+    <p class="text-center">文本居中对齐</p>
+    <p class="text-muted">文本暗淡</p>
+    <p class="text-primary">文本primary</p>
+    <p class="text-success">文本success</p>
+    <p class="text-info">文本info</p>
+    <p class="text-warning">文本warning</p>
+    <p class="text-danger">文本danger</p>
+
+    <!--Bootstrap 定义 <abbr> 元素的样式为显示在文本底部的一条虚线边框，
+    当鼠标悬停在上面时会显示完整的文本（只要您为 <abbr> title 属性添加了文本）。-->
+    <abbr title="World Wide Web">www</abbr><br/>
+    <abbr title="Real Simple Syndicate" class="initialism">rss</abbr>
+
+    <address>
+        <strong>Full Name</strong><br/>
+        007 street<br/>
+        <abbr title="Phone">P:</abbr>(128)4747...
+        <a href="mailto:#">mailto@gmail.com</a>
+    </address>
+
+    <blockquote>
+        <p>这是一个默认的应用实列。这是一个默认的应用实列。这是一个默认的应用实列。这是一个默认的应用实列。</p>
+    </blockquote>
+    <blockquote>
+        这是一个带有源标题的引用,这是一个带有源标题的引用,这是一个带有源标题的引用,这是一个带有源标题的引用,
+        <small>Someone famous in <cite title="source title"><a href="www.baidu.com">source title</a></cite></small>
+    </blockquote>
+    <blockquote class="pull-right">
+        这是一个右对齐的引用
+        <small>Someone famous in <cite>source title</cite></small>
+    </blockquote>
 </body>
 </html>
