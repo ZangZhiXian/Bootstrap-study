@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板</title>
+    <!--width: device-width 可以确保它能正确呈现在不同设备上。
+    initial-scale 确保网页加载时，以 1:1 的比例呈现，不会有任何的缩放。-->
+    <!--添加 maximum-scale=1.0 与 user-scalable=no 可以禁止网页缩放(zooming)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta name="viewport" content="width=device-width,-->
+    <!--initial-scale=1.0,-->
+    <!--maximum-scale=1.0,-->
+    <!--user-scalable=no">-->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <!-- jquery.js 在 bootstrap.js 之前引用-->
+    <script src="../static/js/jquery-2.2.2.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.428571429;
+            color: #333333;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Form</h1>
+    </div>
+    <form action="/login" role="form" method="get">
+        <div class="form-group">
+            <label for="name">user name: </label>
+            <input type="text" id="name" class="form-control" placeholder="Enter user name..."/>
+        </div>
+        <div class="form-group">
+            <label for="password">password: </label>
+            <input type="password" class="form-control" placeholder="Enter password..." id="password">
+        </div>
+        <div class="checkbox">
+            <label for="check">
+                <input type="checkbox" id="check">请打勾
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">提交</button>
+    </form>
+
+    <form action="" role="form" class="form-inline">
+        <div class="form-group">
+            <label for="name1">name</label>
+            <input type="text" class="form-control" id="name1">
+        </div>
+        <div class="form-group">
+            <label for="password1">password</label>
+            <input type="password" class="form-control" id="password1">
+        </div>
+        <div class="checkbox">
+            <label for="check1">
+                da gou
+                <input type="checkbox" id="check1">
+            </label>
+            <button type="submit" class="btn bg-primary">submit</button>
+        </div>
+    </form>
+
+    <form action="" role="form" class="form-horizontal">
+        <div class="form-group ">
+            <label for="name2" class="control-label col-sm-4">name</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control " id="name2">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password2" class="control-label col-sm-4">password</label>
+            <div class="col-md-8">
+            <input type="password" class="form-control " id="password2">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">da gou
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-success" type="submit">submit</button>
+            </div>
+        </div>
+    </form>
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label for="firstname" class="col-sm-2 control-label">名字</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="firstname" placeholder="请输入名字">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="lastname" class="col-sm-2 control-label">姓</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="lastname" placeholder="请输入姓">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">请记住我
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">登录</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

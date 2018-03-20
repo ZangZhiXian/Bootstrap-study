@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板</title>
+    <!--width: device-width 可以确保它能正确呈现在不同设备上。
+    initial-scale 确保网页加载时，以 1:1 的比例呈现，不会有任何的缩放。-->
+    <!--添加 maximum-scale=1.0 与 user-scalable=no 可以禁止网页缩放(zooming)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta name="viewport" content="width=device-width,-->
+    <!--initial-scale=1.0,-->
+    <!--maximum-scale=1.0,-->
+    <!--user-scalable=no">-->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <!-- jquery.js 在 bootstrap.js 之前引用-->
+    <script src="../static/js/jquery-2.2.2.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.428571429;
+            color: #333333;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Hello World!</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <h4>First Column</h4>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="col-md-9">
+            <h4>Second Column - split four box</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-md-6">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-md-6">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
